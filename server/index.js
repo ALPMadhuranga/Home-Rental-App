@@ -9,9 +9,20 @@ const listingRoutes = require("./routes/listing.js")
 const bookingRoutes = require("./routes/booking.js")
 const userRoutes = require("./routes/user.js")
 
-app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
+
+// Middleware for handling CORS POLICY
+const corsOptions = {
+  origin: "https://home-rental-app-one.vercel.app/",
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
+app.get('/', (request, response) => {
+  console.log(request);
+  return response.status(234).send('Welcome To MERN Stack Home Rental App');
+});
 
 /* ROUTES */
 app.use("/auth", authRoutes)
