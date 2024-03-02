@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 // Middleware for handling CORS POLICY
 const corsOptions = {
-  origin: "https://home-rental-app-one.vercel.app/",
+  origin: "https://home-rental-app-one.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
