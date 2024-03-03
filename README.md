@@ -1,4 +1,4 @@
-# MERN GoalAchiver App
+# Hotel Booking App
 MERN Full Stack Hotel Rentals application with all Properties listed in different Categories, Listing Details and User's lists.
 
 ## Created Functionalities
